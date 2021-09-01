@@ -1,0 +1,32 @@
+import turtle as t
+
+def hcn(x, y,z):
+    t.fillcolor(z)
+    t.begin_fill()
+    for i in range(2):
+        t.fd(x)
+        t.lt(90)
+        t.fd(y)
+        t.lt(90)
+    t.end_fill()
+def move(x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+hcn(200,300,"skyblue")
+hcn(200,150,"skyblue")
+hcn(100,300,"")
+move(40,50)
+hcn(20,40,"white")
+move(140,50)
+hcn(20,40,"white")
+move(140,200)
+hcn(20,40,"white")
+move(40,200)
+hcn(20,40,"white")
+move(200,0)
+hcn(120,140,"blue")
+move(240,0)
+hcn(40,60,"white")
+hcn(20,60,"")
+t.done()
